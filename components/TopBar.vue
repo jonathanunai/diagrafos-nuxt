@@ -10,6 +10,7 @@
 <style lang="scss">
 .top-bar {
   position: fixed;
+  z-index: 10;
   width: 100%;
   top: 0;
   left: 0;

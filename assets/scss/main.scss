@@ -1,5 +1,11 @@
 @font-face {
   font-family: 'Raleway';
+  src:  url('~@/assets/fonts/Raleway-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
   src:  url('~@/assets/fonts/Raleway-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -8,7 +14,7 @@
 @font-face {
   font-family: 'Raleway';
   src:  url('~@/assets/fonts/Raleway-Medium.ttf') format('truetype');
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -43,4 +49,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.section-title {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $colorDark;
 }
