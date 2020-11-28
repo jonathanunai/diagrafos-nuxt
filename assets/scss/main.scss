@@ -56,3 +56,25 @@ body {
   text-transform: uppercase;
   color: $colorDark;
 }
+.fp-controlArrow {
+  &.fp-prev {
+    height: 30px;
+    width: 30px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    left: 35px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  &.fp-next {
+    height: 30px;
+    width: 30px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    right: 35px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}

@@ -11,11 +11,5 @@
   background: url('/img/Img_Tecnologia.jpg');
   background-size: cover;
   background-position: center;
-  .image-wrapper {
-    margin-bottom: 6rem;
-    img {
-      width: 140px;
-    }
-  }
 }
 </style>
