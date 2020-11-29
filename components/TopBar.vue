@@ -11,9 +11,9 @@
 .top-bar {
   position: fixed;
   z-index: 10;
-  width: 100%;
-  top: 0;
-  left: 0;
+  width: calc(100% - 90px);
+  top: 15px;
+  left: 90px;
   display: flex;
   justify-content: space-between;
   padding: 8px;
