@@ -13,6 +13,13 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  created() {
+    // console.log('empresa created')
+  },
+}
+</script>
 <style lang="scss">
 .section-empresa {
   height: 100vh;

@@ -19,6 +19,7 @@
   padding: 8px;
   img {
     width: 200px;
+    transition: all 2.5 ease;
   }
   ul {
     list-style-type: none;
@@ -31,6 +32,17 @@
       margin-right: 18px;
       text-transform: uppercase;
       font-size: 0.85rem;
+      transition: all 2.5 ease;
+    }
+  }
+}
+.light {
+  .top-bar {
+    img {
+      content: url('/img/Logotipo-Diagrafos_NG.png');
+    }
+    ul li {
+      color: $colorDark;
     }
   }
 }

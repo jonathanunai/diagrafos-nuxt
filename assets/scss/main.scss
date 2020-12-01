@@ -40,6 +40,8 @@ body {
   overflow: hidden;
 }
 .section-container {
+  position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +57,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: $colorDark;
+  text-align: center;
 }
 .fp-controlArrow {
   &.fp-prev {

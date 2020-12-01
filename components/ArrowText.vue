@@ -1,15 +1,30 @@
 <template>
-  <div class="arrow-text" :class="type" ref="fff" @click="$emit('move')">
+  <div ref="fff" class="arrow-text" :class="type" @click="$emit('move')">
     {{ text }}
   </div>
 </template>
 <script>
 export default {
-  props: ['type', 'text'],
+  props: {
+    type: {
+      type: String,
+      default: () => {
+        return 'left'
+      },
+    },
+    text: {
+      type: String,
+      default: () => {
+        return 'Loading...'
+      },
+    },
+  },
 }
 </script>
 <style lang="scss">
 .fp-controlArrow {
+  transition: all 0.3s ease;
+
   &.fp-prev {
     height: 30px;
     width: 30px;
@@ -32,13 +47,31 @@ export default {
   }
 }
 .arrow-text {
-  position: fixed;
+  position: absolute;
   text-transform: uppercase;
   margin-top: -33px;
   font-weight: 500;
+  transition: all 0.4s ease;
   &.left {
     left: 58px;
     top: 50%;
+  }
+  &.right {
+    right: 58px;
+    top: 50%;
+  }
+  &.down {
+    bottom: 20px;
+  }
+}
+.light {
+  .fp-controlArrow.fp-prev,
+  .fp-controlArrow.fp-next {
+    border: solid $colorDark;
+    border-width: 0 3px 3px 0;
+  }
+  .arrow-text {
+    color: $colorDark;
   }
 }
 </style>

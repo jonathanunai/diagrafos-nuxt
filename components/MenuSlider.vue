@@ -9,12 +9,17 @@
       <div id="menu">
         <img src="/img/Logotipo-Diagrafos_NG.png" alt="" />
         <ul @click="closeMenu">
-          <nuxt-link to="/"><li class="uppercase">Inicio</li></nuxt-link>
-          <nuxt-link to="#"><li class="uppercase">Nosotros</li></nuxt-link>
-          <nuxt-link to="/menu"><li class="uppercase">Empresa</li></nuxt-link>
+          <li class="uppercase" @click="moveTo('inicio', 1)">
+            <nuxt-link to="/">Inicio</nuxt-link>
+          </li>
+          <li class="uppercase" @click="moveTo('nosotros', 1)">
+            <nuxt-link to="#nosotros#nosotros">Nosotros</nuxt-link>
+          </li>
+          <li class="uppercase" @click="moveTo('empresa', 1)">
+            <nuxt-link to="#empresa/empresa">Empresa</nuxt-link>
+          </li>
           <nuxt-link to="/"><li class="uppercase">Contacto</li></nuxt-link>
         </ul>
-        <social-links />
       </div>
     </div>
   </nav>
@@ -32,6 +37,9 @@ export default {
     },
     closeMenu() {
       this.$store.dispatch('closeMenu')
+    },
+    moveTo(section, slide) {
+      this.$nuxt.$emit('move-to', [section, slide])
     },
   },
 }
@@ -150,5 +158,8 @@ export default {
       box-shadow: 0 0 30px 10px rgba(23, 23, 23, 0.6);
     }
   }
+}
+.light #menuToggle span {
+  background: $colorDark;
 }
 </style>

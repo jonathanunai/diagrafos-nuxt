@@ -4,8 +4,16 @@ export const state = () => ({
   user: null,
   menuOpen: false,
   editItem: false,
+  slide: 'inicio',
+  config: {
+    inicio: {
+      left: 'Medio ambiente',
+      right: 'Tecnología',
+      top: '',
+      bottom: 'Empresa',
+    },
+  },
 })
-
 export const mutations = {
   SET_USER(state, user) {
     state.user = user
@@ -22,6 +30,9 @@ export const mutations = {
   TOGGLE_MENU(state) {
     state.menuOpen = !state.menuOpen
   },
+  LOAD_CONFIG(state, destination) {
+    state.slide = destination
+  },
 }
 
 export const actions = {
@@ -36,6 +47,9 @@ export const actions = {
   },
   closeMenu(state) {
     state.commit('CLOSE_MENU')
+  },
+  loadConfig(state, destination) {
+    state.commit('LOAD_CONFIG', destination)
   },
   setEditItem(state, item) {
     state.commit('SET_EDIT_ITEM', item)

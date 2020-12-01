@@ -6,7 +6,7 @@
       @move="$emit('move', 'left')"
     />
     <div class="content">
-      <div class="section-title">Falta...</div>
+      <div class="section-title">NOSOTROS...</div>
     </div>
   </div>
 </template>
