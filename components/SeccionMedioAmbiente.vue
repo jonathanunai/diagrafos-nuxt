@@ -42,12 +42,25 @@
   background-size: cover;
   background-position: center;
   .content {
-    flex-direction: row;
+    flex-direction: column-reverse;
     height: 100%;
+    justify-content: space-between;
+    @include md {
+      flex-direction: row;
+    }
   }
   .side {
-    width: 50vw;
+    width: 100vw;
+    @include md {
+      height: 100%;
+      width: 50vw;
+    }
+  }
+  .right-side {
     height: 100%;
+    @include md {
+      transform: none;
+    }
   }
   .left-side {
     background: rgba(255, 255, 255, 0.8);
@@ -56,10 +69,16 @@
     text-align: right;
     display: flex;
     align-items: flex-end;
+    @include md {
+    }
     .info-text {
-      padding: 4rem;
-      padding-top: 12rem;
+      padding: 1rem;
+
       border-top: 6px solid $colorDark;
+      @include md {
+        padding: 4rem;
+        padding-top: 12rem;
+      }
     }
     p {
       padding-bottom: 1rem;
@@ -69,16 +88,29 @@
   .section-title {
     text-transform: none;
     font-weight: 900;
-    font-size: 5rem;
-    margin-top: 12rem;
-    line-height: 4.5rem;
-    text-align: left;
-    margin-left: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    @include md {
+      margin-left: 3rem;
+      margin-top: 12rem;
+      font-size: 5rem;
+      line-height: 4.5rem;
+      text-align: left;
+      top: unset;
+      transform: none;
+    }
+
     span {
       color: black;
       -webkit-text-fill-color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: black;
+      @include md {
+        -webkit-text-stroke-width: 3px;
+      }
     }
   }
 }
