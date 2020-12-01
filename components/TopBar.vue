@@ -1,6 +1,9 @@
 <template>
   <div class="top-bar">
-    <img src="/img/Logotipo-Diagrafos_BL.png" alt="" />
+    <div class="img-wrapper">
+      <img src="/img/Logotipo-Diagrafos_BL.png" alt="" />
+    </div>
+
     <ul>
       <li>Iniciar sesión</li>
       <li>Ayuda</li>
@@ -17,14 +20,21 @@
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  img {
-    width: 200px;
-    transition: all 2.5 ease;
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      max-width: 200px;
+      transition: all 2.5 ease;
+    }
   }
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    padding-left: 15px;
     display: flex;
     align-items: center;
     li {

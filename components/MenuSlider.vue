@@ -78,11 +78,14 @@ export default {
     width: 36px;
     height: 32px;
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 35px;
     cursor: pointer;
     z-index: 2; /* and place it over the hamburger */
     -webkit-touch-callout: none;
+    @include sm {
+      top: 36px;
+    }
   }
   span {
     display: block;

@@ -33,11 +33,14 @@ export default {
   .section-title-logo {
     color: $colorDark;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 2.6rem;
     width: 70%;
     margin-bottom: 2.3rem;
     padding-bottom: 2.3rem;
     border-bottom: 6px solid $colorDark;
+    @include md {
+      font-size: 6rem;
+    }
   }
   p {
     color: $colorDark;

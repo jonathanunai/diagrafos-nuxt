@@ -24,12 +24,14 @@
   }
   .boxed {
     padding: 12px 16px;
-    font-size: 2.3rem;
+    font-size: 1.2rem;
     border: 1px solid $colorWhite;
     font-weight: light;
     text-transform: uppercase;
     margin-bottom: 4rem;
-
+    @include md {
+      font-size: 2.3rem;
+    }
     span {
       color: $colorMain;
     }

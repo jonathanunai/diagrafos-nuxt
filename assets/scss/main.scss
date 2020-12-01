@@ -45,6 +45,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 24px;
 }
 .content {
   display: flex;
@@ -53,11 +54,15 @@ body {
   flex-direction: column;
 }
 .section-title {
-  font-size: 6rem;
+  font-size: 2.6rem;
   font-weight: bold;
   text-transform: uppercase;
   color: $colorDark;
   text-align: center;
+  @include md {
+    font-size: 6rem;
+
+  }
 }
 .fp-controlArrow {
   &.fp-prev {
