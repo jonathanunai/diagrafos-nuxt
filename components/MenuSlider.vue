@@ -9,13 +9,13 @@
       <div id="menu">
         <img src="/img/Logotipo-Diagrafos_NG.png" alt="" />
         <ul @click="closeMenu">
-          <li class="uppercase" @click="moveTo('inicio', 1)">
+          <li class="uppercase" @click="moveTo('seccion-inicio', 1)">
             <nuxt-link to="/">Inicio</nuxt-link>
           </li>
-          <li class="uppercase" @click="moveTo('nosotros', 1)">
+          <li class="uppercase" @click="moveTo('seccion-nosotros', 1)">
             <nuxt-link to="#nosotros#nosotros">Nosotros</nuxt-link>
           </li>
-          <li class="uppercase" @click="moveTo('empresa', 1)">
+          <li class="uppercase" @click="moveTo('seccion-empresa', 1)">
             <nuxt-link to="#empresa/empresa">Empresa</nuxt-link>
           </li>
           <nuxt-link to="/"><li class="uppercase">Contacto</li></nuxt-link>

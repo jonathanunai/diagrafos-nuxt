@@ -14,21 +14,21 @@
           </div>
         </div>
         <div class="section" data-anchor="seccion-empresa">
-          <div class="slide" data-anchor="slide1"><seccion-vacia /></div>
+          <div class="slide" data-anchor="hoteles"><seccion-hoteles /></div>
           <div class="slide active" data-anchor="empresa">
             <seccion-empresa />
           </div>
-          <div class="slide" data-anchor="slide4"><seccion-vacia /></div>
+          <div class="slide" data-anchor="moda"><seccion-moda /></div>
         </div>
         <div class="section" data-anchor="seccion-nosotros">
-          <div class="slide" data-anchor="vacia3">
-            <seccion-vacia />
+          <div class="slide" data-anchor="gimnasios">
+            <seccion-gimnasios />
           </div>
           <div class="slide" data-anchor="nosotros">
             <seccion-nosotros />
           </div>
-          <div class="slide" data-anchor="vacia6">
-            <seccion-vacia />
+          <div class="slide" data-anchor="alimentacion">
+            <seccion-alimentacion />
           </div>
         </div>
       </full-page>

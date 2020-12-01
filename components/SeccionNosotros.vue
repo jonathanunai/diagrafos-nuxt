@@ -1,9 +1,10 @@
 <template>
   <div class="section-container section-vacio">
+    <arrow-text type="left" text="Gimnasios" @move="$emit('move', 'left')" />
     <arrow-text
-      type="left"
-      text="Medio ambiente"
-      @move="$emit('move', 'left')"
+      type="right"
+      text="Alimentacion"
+      @move="$emit('move', 'right')"
     />
     <div class="content">
       <div class="section-title">NOSOTROS...</div>

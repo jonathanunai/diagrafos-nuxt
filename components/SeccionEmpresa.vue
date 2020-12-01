@@ -1,5 +1,8 @@
 <template>
   <div class="section-container section-empresa">
+    <arrow-text type="left" text="Hoteles" @move="$emit('move', 'left')" />
+    <arrow-text type="right" text="Moda" @move="$emit('move', 'right')" />
+
     <div class="content content-empresa">
       <div class="section-title-logo">diagrafos</div>
       <p>
