@@ -55,13 +55,18 @@ body {
 }
 .section-title {
   font-size: 2.6rem;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: uppercase;
   color: $colorDark;
   text-align: center;
   @include md {
     font-size: 6rem;
-
+  }
+}
+#fp-nav {
+  display: block;
+  @include md {
+    display: none;
   }
 }
 .strong {

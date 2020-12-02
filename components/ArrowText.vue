@@ -1,5 +1,5 @@
 <template>
-  <div ref="fff" class="arrow-text" :class="type" @click="$emit('move')">
+  <div ref="fff" class="arrow-text" :class="type">
     {{ text }}
   </div>
 </template>
@@ -24,6 +24,10 @@ export default {
 <style lang="scss">
 .fp-controlArrow {
   transition: all 0.3s ease;
+  display: none;
+  @include md {
+    display: block;
+  }
 
   &.fp-prev {
     height: 30px;
@@ -52,6 +56,11 @@ export default {
   margin-top: -33px;
   font-weight: 500;
   transition: all 0.4s ease;
+  display: none;
+  @include md {
+    display: block;
+  }
+
   &.left {
     left: 58px;
     top: 50%;

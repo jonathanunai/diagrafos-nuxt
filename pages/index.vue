@@ -66,6 +66,7 @@ export default {
         anchors: ['seccion-inicio', 'seccion-empresa', 'seccion-nosotros'],
         controlArrows: true,
         scrollHorizontally: true,
+        navigation: true,
         afterSlideLoad: () => {
           this.loadMode()
         },

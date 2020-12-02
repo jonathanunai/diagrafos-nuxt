@@ -88,7 +88,7 @@
   .section-title {
     text-transform: none;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
     top: 50%;
     position: relative;

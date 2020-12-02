@@ -18,7 +18,7 @@
           <li class="uppercase" @click="moveTo('seccion-empresa', 1)">
             <nuxt-link to="#empresa/empresa">Empresa</nuxt-link>
           </li>
-          <nuxt-link to="/"><li class="uppercase">Contacto</li></nuxt-link>
+          <li class="uppercase"><nuxt-link to="/">Contacto</nuxt-link></li>
         </ul>
       </div>
     </div>
@@ -50,7 +50,7 @@ export default {
   position: relative;
   top: 0;
   left: 0;
-  z-index: 11;
+  z-index: 110;
   -webkit-user-select: none;
   user-select: none;
   color: $colorDark;
@@ -60,8 +60,12 @@ export default {
     transition: all 0.3s ease;
     text-transform: uppercase;
     text-align: left;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 400;
+    @include md {
+      font-size: 2.3rem;
+    }
+
     &:hover {
       li {
         transition: all 0.3s ease;
