@@ -90,6 +90,25 @@ export default {
     this.$nuxt.$on('move-to', (params) => {
       this.$refs.fullpage.api.moveTo(params[0], params[1])
     })
+    this.$nuxt.$on('move', (to) => {
+      switch (to) {
+        case 'down':
+          this.$refs.fullpage.api.moveSectionDown()
+          break
+        case 'up':
+          this.$refs.fullpage.api.moveSectionUp()
+          break
+        case 'left':
+          this.$refs.fullpage.api.moveSlideLeft()
+          break
+        case 'right':
+          this.$refs.fullpage.api.moveSlideRight()
+          break
+
+        default:
+          break
+      }
+    })
   },
   mounted() {
     /* document.body.classList.add(
@@ -97,6 +116,10 @@ export default {
       this.$store.state.slide.anchor
     )
     */
+  },
+  beforeDestroy() {
+    this.$nuxt.$off('move-to')
+    this.$nuxt.$off('move')
   },
 
   methods: {
@@ -112,7 +135,10 @@ export default {
         document.body.classList.contains(
           'fp-viewing-seccion-inicio-medio-ambiente'
         ) ||
-        document.body.classList.contains('fp-viewing-seccion-empresa-empresa')
+        document.body.classList.contains(
+          'fp-viewing-seccion-empresa-empresa'
+        ) ||
+        document.body.classList.contains('fp-viewing-seccion-inicio-tecnologia')
       )
         document.body.classList.add('light')
       else document.body.classList.remove('light')

@@ -5,7 +5,7 @@
     </div>
 
     <ul>
-      <li>Iniciar sesión</li>
+      <li><a href="https://shop.diagrafos.es/"> Iniciar sesión</a></li>
       <li>Ayuda</li>
     </ul>
   </div>
@@ -43,6 +43,10 @@
       text-transform: uppercase;
       font-size: 0.85rem;
       transition: all 2.5 ease;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   }
 }

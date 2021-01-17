@@ -3,10 +3,18 @@
     <arrow-text
       type="left"
       text="Medio ambiente"
-      @move="$emit('move', 'left')"
+      @click.native="$nuxt.$emit('move', 'left')"
     />
-    <arrow-text type="right" text="Tecnología" @move="$emit('move', 'right')" />
-    <arrow-text type="down" text="Empresa" @move="$emit('move', 'down')" />
+    <arrow-text
+      type="right"
+      text="Tecnología"
+      @click.native="$nuxt.$emit('move', 'right')"
+    />
+    <arrow-text
+      type="down"
+      text="Empresa"
+      @click.native="$nuxt.$emit('move', 'down')"
+    />
 
     <div class="content">
       <logo-icon />
@@ -14,6 +22,16 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    doThis() {
+      console.log('this')
+      this.$nuxt.$emit('move', 'right')
+    },
+  },
+}
+</script>
 <style lang="scss">
 .section-inicio {
   .image-wrapper {

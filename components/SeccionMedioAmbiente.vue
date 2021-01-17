@@ -1,7 +1,15 @@
 <template>
   <div class="section-container section-medio-ambiente">
-    <arrow-text type="left" text="Tecnologia" @move="$emit('move', 'left')" />
-    <arrow-text type="right" text="Inicio" @move="$emit('move', 'right')" />
+    <arrow-text
+      type="left"
+      text="Tecnologia"
+      @click.native="$nuxt.$emit('move', 'left')"
+    />
+    <arrow-text
+      type="right"
+      text="Inicio"
+      @click.native="$nuxt.$emit('move', 'right')"
+    />
 
     <div class="content">
       <div class="side left-side">
@@ -88,7 +96,7 @@
   .section-title {
     text-transform: none;
     font-weight: 900;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     text-align: center;
     top: 50%;
     position: relative;
@@ -96,11 +104,15 @@
     @include md {
       margin-left: 3rem;
       margin-top: 12rem;
-      font-size: 5rem;
-      line-height: 4.5rem;
+      font-size: 3.8rem;
+      line-height: 4.2rem;
       text-align: left;
       top: unset;
       transform: none;
+    }
+    @include lg {
+      font-size: 5rem;
+      line-height: 4.5rem;
     }
 
     span {

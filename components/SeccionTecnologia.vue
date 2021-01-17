@@ -1,5 +1,16 @@
 <template>
   <div class="section-container section-tecnologia">
+    <arrow-text
+      type="left"
+      text="Inicio"
+      @click.native="$nuxt.$emit('move', 'left')"
+    />
+    <arrow-text
+      type="right"
+      text="Medio ambiente"
+      @click.native="$nuxt.$emit('move', 'right')"
+    />
+
     <div class="content">
       <div class="section-title">Tecnología</div>
       <p>

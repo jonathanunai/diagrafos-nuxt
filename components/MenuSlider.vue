@@ -18,7 +18,9 @@
           <li class="uppercase" @click="moveTo('seccion-empresa', 1)">
             <nuxt-link to="#empresa/empresa">Empresa</nuxt-link>
           </li>
-          <li class="uppercase"><nuxt-link to="/">Contacto</nuxt-link></li>
+          <li class="uppercase">
+            <nuxt-link to="/contacto">Contacto</nuxt-link>
+          </li>
         </ul>
       </div>
     </div>
