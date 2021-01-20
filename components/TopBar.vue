@@ -5,7 +5,7 @@
     </div>
 
     <ul>
-      <li><a href="https://shop.diagrafos.es/"> Iniciar sesión</a></li>
+      <li><a href="https://shop.diagrafos.es/"> Acceso clientes</a></li>
       <li>Ayuda</li>
     </ul>
   </div>
