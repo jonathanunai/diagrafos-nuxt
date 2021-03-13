@@ -15,8 +15,8 @@
         <span class="strong"
           >espacio personalizado para la tramitación de pedidos</span
         >, control del material de stock.<br />
-        Tenga toda la trazabilidad del producto hasta la confirmación de la
-        entrega en todo momento.<br />
+        Tenga el seguimiento del producto en todo momento, desde el ok al pedido
+        hasta la confirmación de su entrega.<br />
         No perder el cuidado de su marca, homogenéidad en todos sus productos, y
         una logística que cumpla con las fechas.<br />
         <span class="bottom-line"
