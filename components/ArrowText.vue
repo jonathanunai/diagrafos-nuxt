@@ -58,7 +58,6 @@ export default {
     border: solid #ffffff;
     border-width: 0 3px 3px 0;
     padding: 3px;
-    right: 35px;
     transform: rotate(45deg) translate(36px, 15px);
     -webkit-transform: rotate(45deg) translate(36px, 15px);
   }
@@ -92,7 +91,8 @@ export default {
 }
 .light {
   .fp-controlArrow.fp-prev,
-  .fp-controlArrow.fp-next {
+  .fp-controlArrow.fp-next,
+  .fp-controlArrow.fp-down {
     border: solid $colorDark;
     border-width: 0 3px 3px 0;
   }

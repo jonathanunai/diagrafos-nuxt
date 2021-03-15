@@ -1,11 +1,16 @@
 <template>
   <div class="section-container section-vacio">
-    <arrow-text type="left" text="Gimnasios" @move="$emit('move', 'left')" />
+    <arrow-text
+      type="left"
+      text="Gimnasios"
+      @click.native="$nuxt.$emit('move', 'left')"
+    />
     <arrow-text
       type="right"
       text="Alimentacion"
-      @move="$emit('move', 'right')"
+      @click.native="$nuxt.$emit('move', 'right')"
     />
+
     <div class="content">
       <div class="section-title">NOSOTROS...</div>
     </div>

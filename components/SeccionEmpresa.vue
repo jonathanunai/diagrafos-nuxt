@@ -1,7 +1,20 @@
 <template>
   <div class="section-container section-empresa">
-    <arrow-text type="left" text="Hoteles" @move="$emit('move', 'left')" />
-    <arrow-text type="right" text="Moda" @move="$emit('move', 'right')" />
+    <arrow-text
+      type="left"
+      text="Hoteles"
+      @click.native="$nuxt.$emit('move', 'left')"
+    />
+    <arrow-text
+      type="right"
+      text="Moda"
+      @click.native="$nuxt.$emit('move', 'right')"
+    />
+    <arrow-text
+      type="down"
+      text=""
+      @click.native="$nuxt.$emit('move', 'down')"
+    />
 
     <div class="content content-empresa">
       <div class="section-title-logo">diagrafos</div>

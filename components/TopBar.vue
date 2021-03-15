@@ -9,37 +9,40 @@
         <div href="https://shop.diagrafos.es/" @click="toggleClientLogin">
           Acceso clientes
         </div>
-        <transition name="slide-fade">
-          <div v-if="showClientLogin" class="client-login">
-            <div class="login-header">Acceso para clientes</div>
-            <div class="login-links">
-              <div class="undeline undeline-blue">
-                <a href="https://shop.diagrafos.es">
-                  <img
-                    src="/img/OnPS_Diagrafos.png"
-                    alt="Acceso a Online Printing Supply"
-                  />
-                </a>
-              </div>
-              <div class="undeline">
-                <a
-                  href="
-https://www.gesgraph.com:8192/tiendaVirtual/webTienda/index.asp"
-                >
-                  <img
-                    src="/img/OnPC_Diagrafos.png"
-                    alt="Acceso a Online Printing Control"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="background" @click="toggleClientLogin"></div>
-          </div>
-        </transition>
       </li>
       <li>Ayuda</li>
     </ul>
+    <transition name="slide-fade">
+      <div v-if="showClientLogin" class="client-login">
+        <div class="login-header">Acceso para clientes</div>
+        <div class="login-links">
+          <div class="undeline undeline-blue">
+            <a href="https://shop.diagrafos.es">
+              <img
+                src="/img/OnPS_Diagrafos.png"
+                alt="Acceso a Online Printing Supply"
+              />
+            </a>
+          </div>
+          <div class="undeline">
+            <a
+              href="
+https://www.gesgraph.com:8192/tiendaVirtual/webTienda/index.asp"
+            >
+              <img
+                src="/img/OnPC_Diagrafos.png"
+                alt="Acceso a Online Printing Control"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </transition>
+    <div
+      v-if="showClientLogin"
+      class="background"
+      @click="toggleClientLogin"
+    ></div>
   </div>
 </template>
 <script>
@@ -127,23 +130,30 @@ export default {
     }
     .login-links {
       display: flex;
+      flex-direction: column;
       padding-bottom: 24px;
+      @include md {
+        flex-direction: row;
+      }
     }
     img {
-      padding: 24px;
+      padding: 48px;
       padding-bottom: 0;
       display: inline-block;
       width: 100%;
       @include md {
+        padding: 24px;
+        padding-bottom: 0;
+
         width: 220px;
       }
     }
     .undeline {
       cursor: pointer;
       z-index: 100;
-      width: 50%;
       @include md {
         width: auto;
+        width: 50%;
       }
     }
     .undeline:after {

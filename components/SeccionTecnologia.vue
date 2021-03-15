@@ -10,7 +10,11 @@
       text="Medio ambiente"
       @click.native="$nuxt.$emit('move', 'right')"
     />
-
+    <arrow-text
+      type="down"
+      text=""
+      @click.native="$nuxt.$emit('move', 'down')"
+    />
     <div class="content">
       <div class="section-title">Tecnología</div>
       <p>

@@ -12,7 +12,7 @@
     />
     <arrow-text
       type="down"
-      text="Empresa"
+      text=""
       @click.native="$nuxt.$emit('move', 'down')"
     />
 

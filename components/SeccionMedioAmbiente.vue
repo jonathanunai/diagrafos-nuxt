@@ -10,6 +10,11 @@
       text="Inicio"
       @click.native="$nuxt.$emit('move', 'right')"
     />
+    <arrow-text
+      type="down"
+      text=""
+      @click.native="$nuxt.$emit('move', 'down')"
+    />
 
     <div class="content">
       <div class="side left-side">
