@@ -28,6 +28,7 @@
             <a
               href="
 https://www.gesgraph.com:8192/tiendaVirtual/webTienda/index.asp"
+              target="_blank"
             >
               <img
                 src="/img/OnPC_Diagrafos.png"
