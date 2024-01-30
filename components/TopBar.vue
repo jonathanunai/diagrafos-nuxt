@@ -26,8 +26,7 @@
           </div>
           <div class="undeline">
             <a
-              href="
-https://www.gesgraph.com:8192/tiendaVirtual/webTienda/index.asp"
+              href="https://diagrafos.gesgraph.com/tiendaVirtual/webTienda/index.asp"
               target="_blank"
             >
               <img
