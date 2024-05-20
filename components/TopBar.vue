@@ -35,6 +35,17 @@
               />
             </a>
           </div>
+          <div class="undeline undeline-red">
+            <a
+              href="https://onlinevisualchange.com/"
+              target="_blank"
+            >
+              <img
+                src="/img/OnVC_Diagrafos.png"
+                alt="Acceso a Online Visual change"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </transition>
@@ -113,15 +124,17 @@ export default {
     background: $colorDark;
     padding: 12px 24px;
     right: 0;
-    top: 0;
-    width: 100vw;
+    top: 4rem;
+    width: 90vw;
     border-radius: 1rem;
     z-index: 12;
+    margin: auto;
+    transform: translateX(-5%);
     @include md {
       width: auto;
 
       right: 12px;
-      top: 4px;
+      top: 50px;
     }
     .login-header {
       color: $colorWhite;
@@ -165,6 +178,9 @@ export default {
     }
     .undeline-blue:after {
       border-bottom: solid 3px #69a8d9;
+    }
+    .undeline-red:after {
+      border-bottom: solid 3px red;
     }
     .undeline:hover:after {
       transform: scaleX(1);
